@@ -1,0 +1,131 @@
+---
+layout: default
+---
+{% assign member_id = page.member_id %}
+{% assign related_works = site.data.works | where_exp: "work", "work.author_ids contains member_id" %}
+<main class="pt-20">
+  <section class="bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 py-8 md:py-10">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-slate-500 mb-8">
+        <a class="hover:text-primary transition-colors" href="{{ '/' | relative_url }}">Home</a>
+        <span class="material-symbols-outlined text-base" aria-hidden="true">chevron_right</span>
+        <a class="hover:text-primary transition-colors" href="{{ '/members.html' | relative_url }}">メンバー</a>
+        <span class="material-symbols-outlined text-base" aria-hidden="true">chevron_right</span>
+        <span class="text-primary font-medium">{{ page.name }}</span>
+      </nav>
+
+      <div class="grid lg:grid-cols-[360px_1fr] gap-10 items-start">
+        <aside class="rounded-3xl border border-slate-200 bg-white shadow-soft overflow-hidden">
+          <div class="aspect-square bg-slate-100 flex items-center justify-center overflow-hidden">
+            {% if page.image %}
+              <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="hidden w-full h-full items-center justify-center">
+                <span class="material-symbols-outlined text-7xl text-slate-300" aria-hidden="true">person</span>
+              </div>
+            {% else %}
+              <span class="material-symbols-outlined text-7xl text-slate-300" aria-hidden="true">person</span>
+            {% endif %}
+          </div>
+
+          <div class="p-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">
+              {% if page.status == "alumni" %}Alumni{% else %}Member{% endif %}
+            </p>
+            <h1 class="text-3xl font-black text-lab-navy leading-tight">{{ page.name }}</h1>
+            {% if page.kana %}
+              <p class="mt-2 text-sm text-slate-500">{{ page.kana }}</p>
+            {% endif %}
+            {% if page.roman %}
+              <p class="mt-1 text-sm text-slate-400">{{ page.roman }}</p>
+            {% endif %}
+
+            <div class="mt-6 space-y-3 text-sm">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-lg" aria-hidden="true">school</span>
+                <div>
+                  <p class="font-bold text-slate-700">所属区分</p>
+                  <p class="text-slate-500">
+                    {% if page.status == "alumni" %}
+                      卒業生{% if page.graduation_year or page.alumni_type %}（{% if page.graduation_year %}{{ page.graduation_year }}年{% endif %}{% if page.graduation_year and page.alumni_type %}・{% endif %}{% if page.alumni_type %}{{ page.alumni_type }}{% endif %}）{% endif %}
+                    {% else %}
+                      {{ page.grade | default: "学生" }}
+                    {% endif %}
+                  </p>
+                </div>
+              </div>
+
+              {% if page.hobbies and page.hobbies.size > 0 %}
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary text-lg" aria-hidden="true">interests</span>
+                <div>
+                  <p class="font-bold text-slate-700">趣味</p>
+                  <p class="text-slate-500">{{ page.hobbies | join: "、" }}</p>
+                </div>
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="mt-7 flex flex-col gap-3">
+              <a href="{{ '/members.html' | relative_url }}" class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 hover:border-primary hover:text-primary transition-all">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_back</span>
+                メンバー一覧へ
+              </a>
+              <a href="{{ '/works.html' | relative_url }}?author={{ page.member_id }}" class="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white hover:bg-lab-navy transition-all">
+                <span class="material-symbols-outlined text-lg" aria-hidden="true">article</span>
+                研究業績を見る
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="space-y-8">
+          <section class="rounded-3xl border border-slate-200 bg-white p-7 md:p-9 shadow-sm">
+            <h2 class="text-2xl font-black text-lab-navy border-l-4 border-primary pl-4">プロフィール</h2>
+            <div class="mt-6 prose prose-slate max-w-none leading-relaxed">
+              {{ content }}
+            </div>
+          </section>
+
+          {% if page.research_title %}
+          <section class="rounded-3xl border border-slate-200 bg-white p-7 md:p-9 shadow-sm">
+            <h2 class="text-2xl font-black text-lab-navy border-l-4 border-primary pl-4">研究テーマ・専門分野</h2>
+            <p class="mt-5 text-slate-600 leading-relaxed">{{ page.research_title }}</p>
+            {% if page.keywords and page.keywords.size > 0 %}
+              <div class="mt-5 flex flex-wrap gap-2">
+                {% for keyword in page.keywords %}
+                  <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold">{{ keyword }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </section>
+          {% endif %}
+
+          <section class="rounded-3xl border border-slate-200 bg-white p-7 md:p-9 shadow-sm">
+            <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 border-b border-slate-200 pb-4">
+              <div>
+                <h2 class="text-2xl font-black text-lab-navy">関連する研究業績</h2>
+                <p class="mt-2 text-sm text-slate-500">{{ page.name }} が著者に含まれる研究業績を表示します。</p>
+              </div>
+              <a href="{{ '/works.html' | relative_url }}?author={{ page.member_id }}" class="text-primary text-sm font-bold hover:underline inline-flex items-center gap-1">
+                一覧で見る
+                <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+
+            {% if related_works.size > 0 %}
+              <div class="mt-6 grid gap-4">
+                {% for work in related_works limit: 5 %}
+                  {% include work-card.html work=work %}
+                {% endfor %}
+              </div>
+            {% else %}
+              <div class="mt-6 rounded-2xl bg-slate-50 border border-slate-200 p-6 text-slate-500 text-sm leading-relaxed">
+                現在、このメンバーに紐づく研究業績は登録されていません。
+              </div>
+            {% endif %}
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

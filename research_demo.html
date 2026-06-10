@@ -1,0 +1,229 @@
+---
+layout: default
+title: "研究デモ"
+active_nav: prospective
+---
+<main class="pt-20">
+  <section class="relative overflow-hidden bg-slate-50 dark:bg-slate-900/50 pt-8 pb-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-sm text-slate-500 mb-8">
+        <a class="hover:text-primary transition-colors" href="{{ '/' | relative_url }}">Home</a>
+        <span class="material-symbols-outlined text-xs" aria-hidden="true">chevron_right</span>
+        <a class="hover:text-primary transition-colors" href="{{ '/prospective_students.html' | relative_url }}">配属を希望する学生の方へ</a>
+        <span class="material-symbols-outlined text-xs" aria-hidden="true">chevron_right</span>
+        <span class="text-primary font-medium dark:text-accent">研究デモ</span>
+      </nav>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:bg-accent/20 dark:text-accent text-xs font-bold uppercase tracking-widest">Research Demo</span>
+          <h1 class="hero-title text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">
+            研究テーマを<br /><span class="text-primary dark:text-accent">体験する入口</span>
+          </h1>
+          <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+            上原研究室で扱う研究テーマについて、実装や実験のイメージをつかむためのデモページです。
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="{{ '/prospective_students.html' | relative_url }}" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-700 hover:border-primary hover:text-primary transition-colors">
+              配属案内へ戻る
+              <span class="material-symbols-outlined text-base" aria-hidden="true">undo</span>
+            </a>
+          </div>
+        </div>
+        <div class="relative hidden h-[380px] rounded-2xl overflow-hidden shadow-2xl abstract-lab-bg lg:block">
+          <div class="absolute inset-0 p-8 flex flex-col justify-between text-white">
+            <div class="flex justify-end gap-3 text-white/80">
+              <span class="material-symbols-outlined text-5xl" aria-hidden="true">science</span>
+              <span class="material-symbols-outlined text-5xl" aria-hidden="true">analytics</span>
+              <span class="material-symbols-outlined text-5xl" aria-hidden="true">security</span>
+            </div>
+            <div class="bg-white/10 backdrop-blur rounded-2xl border border-white/20 p-6 max-w-md">
+              <p class="text-sm uppercase tracking-[0.25em] text-white/70 mb-3">Try Research</p>
+              <p class="text-2xl font-bold leading-relaxed">観察する・動かす・比べる</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl font-bold mb-6 border-l-4 border-primary pl-6">公開中のデモ</h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          研究テーマに関連する考え方を、実装や簡単な操作を通して確認できるデモです。正式な研究成果だけでなく、学習・検討用の試作も含みます。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-20">
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">encrypted</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Crypto Demo</p>
+              <h3 class="text-xl font-bold mb-3">リアルタイム暗号デモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                暗号通信の基本的な流れを、送信者・受信者の視点から確認できるデモです。情報を安全にやり取りする仕組みを体験的に理解できます。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 情報セキュリティ</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://crypto-demo-realtime.vercel.app/?room=demo-room" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">qr_code_2</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">QR Code Demo</p>
+              <h3 class="text-xl font-bold mb-3">Dual QR デモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                QRコードや符号化に関する考え方を、操作しながら確認できるデモです。情報の表現方法や読み取りの仕組みに触れる入口として利用できます。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 誤り訂正符号・情報セキュリティ</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://dualqr.vercel.app/" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">scatter_plot</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Randomness Evaluation Demo</p>
+              <h3 class="text-xl font-bold mb-3">文字列入力対応 乱数評価デモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                入力した文字列を使って、乱数による配置や分布の見え方を確認できるデモです。乱数の偏りや散布状況を視覚的に観察できます。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 擬似乱数系列</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://ko-max-123.github.io/demo/random-scatter-text-input-demo/index.html" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        {% comment %}
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">casino</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Random Predictor Demo</p>
+              <h3 class="text-xl font-bold mb-3">java.util.Random 入力検証デモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                Javaで生成される擬似乱数系列について、出力の特徴や予測可能性を入力値から確認できるデモです。乱数の品質や安全性評価の入口として利用できます。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 擬似乱数系列 / 情報セキュリティ</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://ko-max-123.github.io/demo/java-random-predictor-input-demo/index.html" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        {% endcomment %}
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">image_search</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Image Encryption Demo</p>
+              <h3 class="text-xl font-bold mb-3">悪い乱数で画像を暗号化するとバレるデモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                画像データに乱数を用いた変換を加え、暗号化や復元の考え方を確認できるデモです。画像を安全に扱う応用技術の入口として利用できます。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 画像処理とセキュリティ応用</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://ko-max-123.github.io/demo/image-random-encryption-demo/index.html" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">hub</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Error Correction Demo</p>
+              <h3 class="text-xl font-bold mb-3">誤り訂正デモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                通信や記録の途中で生じる誤りを、符号化によって検出・訂正する考え方を操作しながら確認できるデモです。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 誤り訂正符号・情報セキュリティ</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://ko-max-123.github.io/demo/error-correction-demo/index.html" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="group bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="flex items-start gap-6">
+            <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">graphic_eq</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Audio Tamper Demo</p>
+              <h3 class="text-xl font-bold mb-3">音声改ざん検知デモ</h3>
+              <p class="text-slate-600 leading-relaxed mb-5">
+                音声データの変化や改ざんを検出する考え方を確認できるデモです。電子透かしや安全性評価に関わる応用テーマとして利用できます。
+              </p>
+              <p class="text-xs font-bold text-slate-500 mb-5">関連テーマ: 情報セキュリティ / 電子透かし</p>
+              <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="https://ko-max-123.github.io/demo/audio-tamper-demo/index.html" target="_blank" rel="noopener noreferrer">
+                デモを開く
+                <span class="material-symbols-outlined text-base" aria-hidden="true">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold mb-4">デモで触れられるテーマ</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">上原研究室では、情報代数、擬似乱数系列、誤り訂正符号・情報セキュリティとその応用に関する研究を進めています。</p>
+        <div class="w-20 h-1 bg-primary mx-auto mt-6"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- 情報セキュリティの研究テーマカードは非表示 -->
+        {% for theme in site.data.lab.themes %}
+          {% unless theme.title == "情報セキュリティ" %}
+            <article class="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-slate-200">
+              <div class="flex items-start gap-6">
+                <div class="bg-primary/5 p-4 rounded-xl group-hover:bg-primary group-hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-4xl" aria-hidden="true">{{ theme.icon }}</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-3">{{ theme.title }}</h3>
+                  <p class="text-slate-600 leading-relaxed">{{ theme.text }}</p>
+                </div>
+              </div>
+            </article>
+          {% endunless %}
+        {% endfor %}
+      </div>
+      <div class="mt-10 text-center">
+        <a class="inline-flex items-center gap-2 rounded-full bg-lab-navy px-6 py-3 text-sm font-bold text-white hover:bg-slate-800 transition-colors" href="{{ '/works.html' | relative_url }}">
+          関連する研究業績を見る
+          <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>

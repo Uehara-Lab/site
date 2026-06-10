@@ -1,0 +1,104 @@
+---
+layout: default
+title: "ホーム"
+active_nav: home
+---
+<main class="pt-20">
+  <section class="relative h-[76vh] min-h-[520px] max-h-[760px] w-full overflow-hidden flex items-center px-4" style="background-color: #0a192f;">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-3xl">
+        <h1 class="hero-title md:text-7xl font-bold text-white mb-6 uppercase text-3xl sm:text-5xl leading-tight">Welcome to <br class="md:hidden" />Uehara Lab</h1>
+        <div class="w-16 h-1 bg-white mb-6"></div>
+        <p class="md:text-2xl text-slate-200 font-light leading-relaxed text-lg">情報代数・擬似乱数系列・誤り訂正符号・情報セキュリティを中心に、信頼できる情報技術の基盤を理論と実装の両面から探究します。</p>
+      </div>
+    </div>
+    <a href="#news" class="scroll-cue absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-white/80 hover:text-white transition-colors" aria-label="ニュースへスクロール">
+      <span class="block text-[10px] font-bold uppercase tracking-[0.35em] mb-3">Scroll</span>
+      <span class="scroll-cue-line mx-auto block h-10 w-px bg-white/70"></span>
+    </a>
+  </section>
+
+  <section id="news" class="bg-white py-12 scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-8">
+        <h2 class="font-bold section-title text-3xl">News<span class="japanese-sub">ニュース</span></h2>
+      </div>
+      <div class="space-y-0 border-t border-slate-100">
+        {% assign recent_news = site.news | sort: 'date' | reverse %}
+        {% for item in recent_news limit:3 %}
+          <div class="py-5 border-b border-slate-100 flex flex-col md:flex-row md:items-center gap-2">
+            <span class="text-slate-400 text-sm w-32 shrink-0">{{ item.date | date: "%Y.%m.%d" }}</span>
+            <span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase tracking-wider rounded w-fit">{{ item.category }}</span>
+            <a class="text-lg hover:text-blue-600 transition-colors" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="mt-8 text-center">
+        <a class="inline-block bg-lab-navy text-white px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors" href="{{ '/news.html' | relative_url }}">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-bold section-title mb-8 text-3xl">About<span class="japanese-sub">上原研究室について</span></h2>
+      <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+        <p>{{ site.data.lab.hero.description }}</p>
+      </div>
+      <div class="mt-8">
+        <a class="inline-block bg-lab-navy text-white px-12 py-4 text-sm font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors" href="{{ '/labo.html' | relative_url }}">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-bold section-title mb-10 text-center text-3xl">Activities<span class="japanese-sub">研究室の活動</span></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="rounded-xl border border-slate-100 p-5 bg-slate-50">
+          <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">functions</span>
+          <h3 class="mt-3 text-lg font-bold">基礎研究</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">情報技術を支える数理的な基盤を探究します。</p>
+        </div>
+        <div class="rounded-xl border border-slate-100 p-5 bg-slate-50">
+          <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">co_present</span>
+          <h3 class="mt-3 text-lg font-bold">ゼミ</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">調査や実験の成果を発表し、議論を深めます。勉強会もやってます。</p>
+        </div>
+        <div class="rounded-xl border border-slate-100 p-5 bg-slate-50">
+          <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">podium</span>
+          <h3 class="mt-3 text-lg font-bold">学会発表</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">研究成果を学会で発表し、広く共有します。</p>
+        </div>
+        <div class="rounded-xl border border-slate-100 p-5 bg-slate-50">
+          <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">science</span>
+          <h3 class="mt-3 text-lg font-bold">応用研究</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">理論を実装し、実験と評価を通して応用します。</p>
+        </div>
+        <div class="rounded-xl border border-slate-100 p-5 bg-slate-50">
+          <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">celebration</span>
+          <h3 class="mt-3 text-lg font-bold">レクリエーション</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">交流を深め、研究室で楽しく活動します。</p>
+        </div>
+        <div class="rounded-xl border border-slate-100 p-5 bg-slate-50">
+          <span class="material-symbols-outlined text-primary text-3xl" aria-hidden="true">settings</span>
+          <h3 class="mt-3 text-lg font-bold">研究室運営</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">メンバーで協力し、研究環境を整えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-3/5 rounded-3xl overflow-hidden bg-lab-navy shadow-2xl md:h-72">
+        <img src="{{ '/assets/images/lab/2025allmembers.JPG' | relative_url }}" alt="2025年度 上原研究室メンバー集合写真" class="h-auto w-full md:h-full md:object-cover" />
+      </div>
+      <div class="w-full md:w-2/5 space-y-8">
+        <h2 class="font-bold section-title text-3xl">メンバー紹介</h2>
+        <p class="text-slate-600 text-lg leading-relaxed">上原研究室のメンバーを紹介します。</p>
+        <a class="block w-full text-center bg-lab-navy text-white py-4 font-bold uppercase tracking-widest hover:bg-slate-800 transition-colors" href="{{ '/members.html' | relative_url }}">メンバー一覧</a>
+      </div>
+    </div>
+  </section>
+</main>
