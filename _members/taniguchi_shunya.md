@@ -8,6 +8,7 @@ member_id: taniguchi_shunya
 grade: 学部４年
 status: current
 category: students
+image: /assets/images/members/taniguchi_shunya.jpg
 research_title: 「音声の電子透かし」
 hobbies:
 - 筋トレ
