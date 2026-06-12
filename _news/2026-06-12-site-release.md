@@ -2,7 +2,7 @@
 title: "上原研のWebサイトをリリースしました"
 date: 2026-06-12
 category: "お知らせ"
-summary: 上原聡研究室のWebサイトをリリースしました。"
+summary: "上原聡研究室のWebサイトをリリースしました。"
 related_links:
   - label: "UEHARA LAB | ホーム"
     href: "/index.html"
