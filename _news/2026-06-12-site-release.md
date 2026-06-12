@@ -6,9 +6,9 @@ summary: "上原聡研究室のWebサイトをリリースしました。"
 related_links:
   - label: "UEHARA LAB | ホーム"
     href: "/index.html"
-    - label: "研究業績"
+  - label: "研究業績"
     href: "/works.html"
-    - label: "研究デモ"
+  - label: "研究デモ"
     href: "/research_demo.html"
 ---
 上原聡研究室のWebサイトをリリースしました。
