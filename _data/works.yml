@@ -110,7 +110,7 @@
   type: oral
   type_label: 口頭発表
   title: 整数化した4次元Lorenz-Stenflo方程式を用いた擬似乱数ビット列共有手法における同期に関する一考察
-  authors_text: 高市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔
+  authors_text: 髙市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔
   author_ids:
   - takaichi
   - gan
@@ -122,13 +122,13 @@
   pages: pp. 1-2
   place: 東京理科大（東京）
   date_text: 9月2日-9月4日, 2025年
-  reference: 高市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔, ``整数化した4次元Lorenz-Stenflo方程式を用いた擬似乱数ビット列共有手法における同期に関する一考察,'' 日本応用数理学会2025年度年会, 応用カオス1C-1-4, pp.~1-2, Sep. 2-Sep. 4, 2025.
+  reference: 髙市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔, ``整数化した4次元Lorenz-Stenflo方程式を用いた擬似乱数ビット列共有手法における同期に関する一考察,'' 日本応用数理学会2025年度年会, 応用カオス1C-1-4, pp.~1-2, Sep. 2-Sep. 4, 2025.
 - id: ref-2025-323
   year: 2025
   type: oral
   type_label: 口頭発表
   title: 整数化した4次元Lorenz-Stenflo方程式の出力値系列に関する乱数性の調査
-  authors_text: 神﨑 啓志, 高市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔
+  authors_text: 神﨑 啓志, 髙市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔
   author_ids:
   - kanzaki_keishi
   - takaichi
@@ -141,7 +141,7 @@
   pages: pp. 1-2
   place: 東京理科大（東京）
   date_text: 9月2日-9月4日, 2025年
-  reference: 神﨑 啓志, 高市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔, ``整数化した4次元Lorenz-Stenflo方程式の出力値系列に関する乱数性の調査,'' 日本応用数理学会2025年度年会, 応用カオス1C-1-3, pp.~1-2, Sep. 2-Sep. 4, 2025.
+  reference: 神﨑 啓志, 髙市 康平, Yan Jun-Juh, 宮崎 武, 上原 聡, 荒木 俊輔, ``整数化した4次元Lorenz-Stenflo方程式の出力値系列に関する乱数性の調査,'' 日本応用数理学会2025年度年会, 応用カオス1C-1-3, pp.~1-2, Sep. 2-Sep. 4, 2025.
 - id: ref-2025-322
   year: 2025
   type: international
@@ -316,7 +316,7 @@
   type: oral
   type_label: 口頭発表
   title: 擬似乱数生成に向けたローレンツ方程式の整数化に関する研究
-  authors_text: 荒木 俊輔、高市 康平y、顔 綿柱、宮崎 武、上原 聡
+  authors_text: 荒木 俊輔、髙市 康平、顔 綿柱、宮崎 武、上原 聡
   author_ids:
   - araki
   - gan
@@ -327,7 +327,7 @@
   pages: pp. 48-53
   place: 岡山大学
   date_text: 7月30日 2024年
-  reference: 荒木 俊輔、高市 康平y、顔 綿柱、宮崎 武、上原 聡, ``擬似乱数生成に向けたローレンツ方程式の整数化に関する研究,'' 信学技報, vol. 124, no. 147, IT2024-22 , pp.~19-24, 7月30日 2024年.
+  reference: 荒木 俊輔、髙市 康平、顔 綿柱、宮崎 武、上原 聡, ``擬似乱数生成に向けたローレンツ方程式の整数化に関する研究,'' 信学技報, vol. 124, no. 147, IT2024-22 , pp.~19-24, 7月30日 2024年.
 - id: ref-2024-312
   year: 2024
   type: international
@@ -385,7 +385,7 @@
   type: oral
   type_label: 口頭発表
   title: 研究紹介:動的同期カオスベースランダム鍵を用いたビデオ/オーディオストリーミング用暗号システム
-  authors_text: 高市 康平, 顔 綿柱, 荒木 俊輔, 宮崎 武, 上原 聡
+  authors_text: 髙市 康平, 顔 綿柱, 荒木 俊輔, 宮崎 武, 上原 聡
   author_ids:
   - takaichi
   - gan
@@ -396,7 +396,7 @@
   pages: pp. 1-5
   place: 松山(愛媛)
   date_text: 9月11日-9月12日, 2023年
-  reference: 高市 康平, 顔 綿柱, 荒木 俊輔, 宮崎 武, 上原 聡, ``研究紹介:動的同期カオスベースランダム鍵を用いたビデオ/オーディオストリーミング用暗号システム,'' 第9回有限体理論とその擬似乱数系列生成への応用ワークショップ予稿集, pp.~38-40, 松山, 9月11日-9月12日, 2023年.
+  reference: 髙市 康平, 顔 綿柱, 荒木 俊輔, 宮崎 武, 上原 聡, ``研究紹介:動的同期カオスベースランダム鍵を用いたビデオ/オーディオストリーミング用暗号システム,'' 第9回有限体理論とその擬似乱数系列生成への応用ワークショップ予稿集, pp.~38-40, 松山, 9月11日-9月12日, 2023年.
 - id: ref-2023-308
   year: 2023
   type: oral
