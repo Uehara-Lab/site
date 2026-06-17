@@ -43,3 +43,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+# Google Search Console対策の為のsitemap.xml生成
+plugins:
+  - jekyll-sitemap
+  
