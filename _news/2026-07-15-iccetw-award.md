@@ -10,7 +10,7 @@ related_links:
 ---
 
 上原聡研究室の桒原大雅、藤木弘也、林夏生が台湾・桃園にて開催されたIEEE ICCE-TW 2026にて発表を行いました。
-また、藤木弘也が「Best Presentator Award」を受賞いたしました。
+また、藤木弘也が「Best Presentation Award」を受賞いたしました。
 
 以下に発表者と発表タイトルを掲載します。
 
