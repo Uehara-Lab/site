@@ -13,14 +13,10 @@ related_links:
 
 以下に発表者と発表タイトルを掲載します。
 
-<blockquote>
-    
-**桒原大雅 :** A Study on Randomness of Sequences by Shuffle Operations for Logistic Map and Linear Congruential Generator
-
-**藤木弘也 :** A Study on the Attack Resistance of Type 1, 3 pairings to NFS Attacks and Pollard’s ρ Method
-
-**林夏生 :** A Study on Balancing Security and Usability in 3D CAPTCHA via Spatial Interaction
-
-</blockquote>
+>**桒原大雅 :** A Study on Randomness of Sequences by Shuffle Operations for Logistic Map and Linear Congruential Generator
+>
+>**藤木弘也 :** A Study on the Attack Resistance of Type 1, 3 pairings to NFS Attacks and Pollard’s ρ Method
+>
+>**林夏生 :** A Study on Balancing Security and Usability in 3D CAPTCHA via Spatial Interaction
 
 詳しくは研究業績を参照してください。
