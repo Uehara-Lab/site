@@ -8,6 +8,7 @@ member_id: ito_kosuke
 grade: 卒業生
 status: alumni
 category: alumni
+image: /assets/images/members/ItoKosuke.jpg
 graduation_year: 2025
 alumni_type: 学部卒
 research_title: 電子透かしを用いた音声放送による災害情報
