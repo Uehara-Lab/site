@@ -91,22 +91,6 @@ extra_js:
     </div>
 
     <div class="space-y-16">
-      {% if journal_works.size > 0 %}
-      <section id="journal" data-work-section="journal" class="scroll-mt-28">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-7 border-b border-slate-200 pb-4">
-          <div>
-            <h2 class="text-3xl font-black text-lab-navy">学術論文</h2>
-            <p class="mt-2 text-slate-500">学術論文・論文誌掲載</p>
-          </div>
-          <span data-section-count="journal" class="inline-flex w-fit px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-bold">{{ journal_works.size }}件</span>
-        </div>
-        <div class="grid gap-5">
-          {% for work in journal_works %}
-            {% include work-card.html work=work %}
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
 
       <section id="international" data-work-section="international" class="scroll-mt-28">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-7 border-b border-slate-200 pb-4">
@@ -137,6 +121,24 @@ extra_js:
           {% endfor %}
         </div>
       </section>
+      
+      {% if journal_works.size > 0 %}
+      <section id="journal" data-work-section="journal" class="scroll-mt-28">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-7 border-b border-slate-200 pb-4">
+          <div>
+            <h2 class="text-3xl font-black text-lab-navy">学術論文</h2>
+            <p class="mt-2 text-slate-500">学術論文・論文誌掲載</p>
+          </div>
+          <span data-section-count="journal" class="inline-flex w-fit px-3 py-1 rounded-full bg-purple-50 text-purple-700 text-xs font-bold">{{ journal_works.size }}件</span>
+        </div>
+        <div class="grid gap-5">
+          {% for work in journal_works %}
+            {% include work-card.html work=work %}
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+      
     </div>
 
     {% include works-year-nav.html current="recent" wrapper_class="mt-16" %}
