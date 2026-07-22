@@ -1,7 +1,11 @@
 - key: recent
-  label: 最近
+  label: 全て
   href: /works.html
-  description: 最近の研究業績
+  description: 全ての研究業績
+- key: 2026
+  label: 2026年
+  href: /works2026.html
+  description: 2026年の研究業績
 - key: 2025
   label: 2025年
   href: /works2025.html
