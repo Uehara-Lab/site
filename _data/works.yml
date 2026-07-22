@@ -1,3 +1,71 @@
+- id: ref-2026-334
+  year: 2026
+  type: international
+  type_label: 国際会議（査読あり）
+  title: A Study on Integerization and Robustness Analysis of the 4-Dimensional Lorenz-Stenflo System
+  authors_text: K. Kanzaki, K. Takaichi, Jun-Juh Yan, T. Miyazaki, S. Uehara, and S. Araki
+  author_ids:
+   - miyazaki
+   - uehara
+   - araki
+  venue: Proc. of 2026 Intern. Conference. on Consumer Electronics - Taiwan (ICCE-TW)
+  paper_no: 'PC'
+  pages: pp. 1-2
+  place: Taoyuan(Taiwan)
+  date_text: Jul. 1-Jul.3, 2026
+  reference: K. Kanzaki, K. Takaichi, Jun-Juh Yan, T. Miyazaki, S. Uehara, and S. Araki, ``A Study on Integerization and Robustness Analysis of the 4-Dimensional Lorenz-Stenflo System,'' Proc. of 2026 Intern. Conference. on Consumer Electronics - Beitou (ICCE-TW), PC, pp.~1-2, Taoyuan, Jul. 1-3, 2026.
+- id: ref-2026-333
+  year: 2026
+  type: international
+  type_label: 国際会議（査読あり）
+  title: A Study on Balancing Security and Usability in 3D CAPTCHA via Spatial Interaction
+  authors_text: M. Ozawa, N. Hayashi, and S. Uehara
+  author_ids: 
+   - ozawa_moeko
+   - hayashi
+   - uehara
+  venue: Proc. of 2026 Intern. Conference. on Consumer Electronics - Taiwan (ICCE-TW)
+  paper_no: 'PC'
+  pages: pp. 1-2
+  place: Taoyuan(Taiwan)
+  date_text: Jul. 1-Jul.3, 2026
+  reference: M. Ozawa, N. Hayashi, and S. Uehara, ``A Study on Balancing Security and Usability in 3D CAPTCHA via Spatial Interaction,'' Proc. of 2026 Intern. Conference. on Consumer Electronics - Beitou (ICCE-TW), PC, pp.~1-2, Taoyuan, Jul. 1-3, 2026.
+- id: ref-2026-332
+  year: 2026
+  type: international
+  type_label: 国際会議（査読あり）
+  title: A Study on Randomness of Sequences by Shuffle Operations for Logistic Map and Linear Congruential Generator
+  authors_text: T. Kuwahara, N Hayashi, T. Miyazaki, S. Araki, and S. Uehara
+  author_ids: 
+   - kuwahara
+   - hayashi
+   - miyazaki
+   - araki
+   - uehara
+  venue: Proc. of 2026 Intern. Conference. on Consumer Electronics - Taiwan (ICCE-TW)
+  paper_no: 'A2-3'
+  pages: pp. 1-2
+  place: Taoyuan(Taiwan)
+  date_text: Jul. 1-Jul.3, 2026
+  reference: T. Kuwahara, N Hayashi, T. Miyazaki, S. Araki, and S. Uehara, ``A Study on Randomness of Sequences by Shuffle Operations for Logistic Map and Linear Congruential Generator,'' Proc. of 2026 Intern. Conference. on Consumer Electronics - Beitou (ICCE-TW), A2-3, pp.~1-2, Taoyuan, Jul. 1-3, 2026.
+- id: ref-2026-331
+  year: 2026
+  type: international
+  type_label: 国際会議（査読あり）
+  title: A Study on the Attack Resistance of Type 1, 3 Pairling to NFS Attacks and Pollard's r Method
+  authors_text: H. Fujiki, R. Yamauchi, T. Miyazaki, T. Kuwahara, and S. Uehara
+  author_ids: 
+   - fujiki
+   - yamauchi
+   - miyazaki
+   - kuwahara
+   - uehara
+  venue: Proc. of 2026 Intern. Conference. on Consumer Electronics - Taiwan (ICCE-TW)
+  paper_no: 'A2-1'
+  pages: pp. 1-2
+  place: Taoyuan(Taiwan)
+  date_text: Jul. 1-Jul.3, 2026
+  reference: H. Fujiki, R. Yamauchi, T. Miyazaki, T. Kuwahara, and S. Uehara, ``A Study on the Attack Resistance of Type 1, 3 Pairling to NFS Attacks and Pollard's r Method,'' Proc. of 2026 Intern. Conference. on Consumer Electronics - Beitou (ICCE-TW), A2-1, pp.~1-2, Taoyuan, Jul. 1-3, 2026.
 - id: ref-2025-330
   year: 2025
   type: international
