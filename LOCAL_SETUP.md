@@ -17,10 +17,23 @@ gem -v
 
 ### macOS
 
-Homebrewを使う場合の例です。
+Homebrew と rbenv を使って、安定版のRuby 3.1 系をインストールします。
+（※最新の Ruby 3.2 以上を入れると Jekyll 3.x の依存ライブラリでエラーが出るため）
 
 ```bash
-brew install ruby
+# 1. rbenv と ruby-build をインストール
+brew install rbenv ruby-build
+
+# 2. PATH の設定（初回のみ）
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+source ~/.zshrc
+
+# 3. Ruby 3.1.4 をインストールして標準に設定
+rbenv install 3.1.4
+rbenv global 3.1.4
+
+# 4. バージョン確認 (ruby 3.1.4... と出ればOK)
 ruby -v
 ```
 
@@ -41,7 +54,7 @@ gem install bundler
 ## 3. このプロジェクトへ移動
 
 ```bash
-cd uehara-lab-jekyll
+cd uehara-lab
 ```
 
 ## 4. 依存関係を入れる
