@@ -13,7 +13,7 @@ related_links:
 ---
 
 上原聡研究室の桒原大雅、藤木弘也、林夏生が台湾・桃園にて開催されたIEEE ICCE-TW 2026にて発表を行いました。
-また、藤木弘也が「Best Presentation Award」を<a href="https://www.kitakyu-u.ac.jp/research/others/commendation/2026.html#20260803-1" target="_blank"><u><font color="blue">受賞いたしました。</font></u></a>
+また、藤木弘也が「Best Presentation Award」を<a href="https://www.kitakyu-u.ac.jp/research/others/commendation/2026.html#20260803-1" target="_blank"><font color="blue"><u>受賞いたしました。</u></font></a>
 以下に発表者と発表タイトルを掲載します。
 
 >**桒原大雅 :** A Study on Randomness of Sequences by Shuffle Operations for Logistic Map and Linear Congruential Generator
